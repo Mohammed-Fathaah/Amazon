@@ -20,33 +20,62 @@
             <img class="h-[1.3rem]" src="https://img.icons8.com/?size=100&id=3723&format=png&color=FFFFFF" alt="location_symbol">
           </div>
          <!-- Address div -->
-          <div class="bg-orange-600 absolute h-[4rem] left-[10.5rem] flex flex-col mb-[0rem] py-2">
+          <div class="absolute h-[4rem] left-[10.5rem] flex flex-col mb-[0rem] py-2">
             <p class="text-gray-600">Delivering to Kochi 682507</p>
             <p class="text-white font-semibold ">Update location</p>
           </div>
-          <!-- Input search div -->
-           <div></div>
-           <!-- Language selecting div -->
-            <div></div>
-            <!-- Account and lists div -->
+          <!-- search div -->
+           <div class="w-[37rem] flex absolute left-[23rem] h-[4rem] py-2 items-center">
+            <!-- categories div -->
+             <div class="bg-gray-300 h-[3rem] w-[3.5rem] flex relative rounded-l-sm">
+            <select id="category" class="w-[3rem] h-[3rem] outline-none" name="category">
+                <option value="allcategories">All</option>
+                <option value="alexaskills">Alexa Skills</option>
+            </select>
+            </div>
+            <!-- input div -->
              <div>
+                <input class="bg-white h-[3rem] w-[30rem] px-2 text-gray-900" type="text" placeholder="Search Amazon.in">
+             </div>
+             <!-- Search icon div -->
+              <div class="bg-orange-400 h-[3rem] w-[3rem] hover:bg-orange-600 rounded-r-sm flex items-center justify-center">
+                <!-- search icon -->
+                 <img class="h-[2rem] w-[2rem]" src="https://img.icons8.com/?size=100&id=7695&format=png&color=000000">
+              </div>
+           </div>
+           <!-- Language selecting div -->
+            <div class="h-[4rem] w-[3.5rem] flex absolute right-[21rem] font-semibold">
+                <select class="text-white" id="language" class="h-[4rem] w-[3.5rem] outline-none absolute" name="language">
+                    <option class="text-black" value="english">EN</option>
+                    <option class="text-black" value="malayalam">MAL</option>
+                </select>
+            </div>
+            <!-- Account and lists div -->
+             <div class="flex flex-col absolute right-[11.5rem] h-[4rem] w-[8.5rem] justify-center">
                 <p class="text-white">Hello,sign in</p>
                 <p class="text-white font-semibold">Accounts & Lists</p>
+                <select id="accounts" class="h-[4rem] w-[8.5rem] absolute text-gray-300" name="accounts">
+                    <option value=""></option>
+                </select> 
              </div>
              <!-- Retuns and orders div -->
-              <div class="text-white">
+              <div class="text-white right-[6rem] absolute h-[4rem] w-[5rem] flex flex-col justify-center">
                 <p>Returns</p>
                 <p class="font-semibold">& Orders</p>
               </div>
               <!-- Cart div -->
-               <div>
+               <div class="h-[4rem] w-[6rem] absolute flex flex-row items-center right-[0.0rem]">
                 <!-- Cart image -->
-                 <img class="" src="" alt="cart">
+                 <img class="h-[2rem] w-[2rem]" src="https://img.icons8.com/?size=100&id=9671&format=png&color=FFFFFF" alt="cart">
                  <!-- cart items no.div -->
                   <div></div>
                  <!-- cart letter div -->
                   <div>
-                 <p>Cart</p>
+                 <p class="text-white font-semibold">Cart</p>
+                 <!-- cart item count div -->
+                  <div class="w-[1rem] h-[1rem] absolute flex top-[0.5rem] left-[0.8rem] items-center justify-center">
+                    <p class="text-orange-600 font-bold">0</p>
+                  </div>
                  </div>
                </div>
      </nav>
